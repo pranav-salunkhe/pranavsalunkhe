@@ -42,7 +42,7 @@ function Experience() {
             imgSrc = {One80dcLogo}
             Where = "180DC NITK"
             Time = "Dec 2022 - Present"
-            Position = "Web Team"
+            Position = "Web Master"
             WorkDone1 = "-Developing 180DC NITK's official website"
         />
     </div>
