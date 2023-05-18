@@ -15,9 +15,9 @@ function Experience() {
             Where = "IEEE NITK"
             Time = "Feb 2022 - Present"
             Position = "Student Member"
-            WorkDone1 = "-Attended Workshops, KEPs, Expert Sessions."
-            WorkDone2 = "-Participated in exclusive IEEE events."
-            WorkDone3 = "-Developed Projects."
+            WorkDone2 = "-Worked on Sentiment Analysis of Covid-19"
+            WorkDone1 = "-Participated in IEEE Envision."
+            WorkDone3 = "-Developed RNN based model with 81.1% accuracy."
         />
         <ExpCard 
             id ='2'
@@ -33,9 +33,9 @@ function Experience() {
             imgSrc = {isteLogo}
             Where = "ISTE NITK"
             Time = "Nov 2022 - Present"
-            Position = "Executive Member"
-            WorkDone1 = "-Developing ISTE NFT Collection on Solana"
-            WorkDone2 = "-Developing a Smart Audio Bot."
+            Position = "Web Master"
+            WorkDone1 = "-Manage official website of ISTE NITK"
+            WorkDone2 = "-Developed ISTE's Virtual Expo"
         />
         <ExpCard 
             id ='4'
@@ -43,7 +43,8 @@ function Experience() {
             Where = "180DC NITK"
             Time = "Dec 2022 - Present"
             Position = "Web Master"
-            WorkDone1 = "-Developing 180DC NITK's official website"
+            WorkDone1 = "-Developed 180DC NITK's official website"
+            WorkDone2 = "-Deploy and manage the website on Hostinger"
         />
     </div>
     </section>

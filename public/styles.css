@@ -3,6 +3,10 @@
     src: url(NBArchitektStd-Regular.otf);
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     margin: 0;
     padding: 0;
@@ -19,13 +23,22 @@ canvas{
 #main {
     font-family: personal-font, serif;
     background-color: #ECEBE7;
-    color: #4B4A48;
+    /* color: #4B4A48; */
 }
 
 
 #navigation-bar{
-    margin-top: 5%;
+    display: flex;
+    margin: 5% 0 5% 0;
 }
+
+/* @media only screen and (max-width: 768px){
+    #navigation-bar{
+        display: grid;
+        grid-template-columns: repeat(2, 6fr); */
+        /* margin: 2% 5% 2% 5%; */
+    /* } */
+/* } */
 
 #navigation-bar span {
     padding: 10px;
@@ -33,6 +46,11 @@ canvas{
 
 #navigation-bar a{
     padding: 10px;
+}
+
+#navigation-bar ul{
+    width: 100%;
+    align-items: center;
 }
 
 .Home-onHoverIn {
@@ -49,19 +67,19 @@ canvas{
 }
 
 .home-div-p1{
-    font-size: medium;
+    font-size: 2vmax;
     text-align: left;
     line-height: 1;
 }
 
 .home-div-p2{
-    font-size: 3.125rem;
+    font-size: 5vmax;
     text-align: center;
     line-height: 1;
 }
 
 .home-div-p3{
-    font-size: small;
+    font-size: 1vmax;
     text-align: right;
     line-height: 1;
 }
@@ -237,28 +255,28 @@ canvas{
 #Card{
     width: 326px;
     height: 290px;
-
+    font-size: 2vh;
 }
 
 .exp-card-img img{
     width: 326px;
     height: 290px;
-    padding-left: 12px;
-    padding-bottom: 13px;
+    /* padding-left: 12px;
+    padding-bottom: 13px; */
 }
 
 .exp-card-img{
-    margin: -5px 0 0 -27px;
+    /* margin: -5px 0 0 -27px; */
 }
 
-.exp-card-title{
+/* .exp-card-title{
     padding-left: 20px;
 }
 
 .exp-card-text{
     padding-top: 20px;
     padding-left: 30px;
-}
+} */
 
 .exp-card-div{
     display: flex;
@@ -275,7 +293,7 @@ canvas{
     background-color: transparent;
     display: flex;
     justify-content: center;
-    perspective: 1000px;
+    perspective: 100000px;
 }
 
 .exp-card-main{
@@ -296,6 +314,10 @@ canvas{
 }
 
 .exp-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transform: rotateY(180deg);
 }
 
@@ -315,4 +337,74 @@ canvas{
 .contact-me-links img{
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .project-card-super{
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+    }
+    .project-card{
+        width: 70vw;
+    }
+    .exp-card-div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30%;
+    }
+    .skills-switch-div{
+        display: none;
+    }
+    /* .exp-card-main{
+        display: flex;
+    }
+    .exp-card-content, .exp-card-img{
+        position: relative;
+        -webkit-backface-visibility: visible; Safari */
+        /* backface-visibility: visible;
+    } */
+    /* .exp-card-content{
+        font-size: 10px;
+        width: 100;
+        transform: rotate(360deg);
+    } */
+    
+    #Card{
+        
+        /* width: 35vw;
+        height: 35vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1240px) {
+    .project-card-super{
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+    }
+    .project-card{
+        width: 70vw;
+    }
+    .exp-card-div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-switch-div{
+        display: none;
+    }
+    #Card{
+        width: 35vw;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -15,7 +15,9 @@ import html from '../components/images/html.png';
 import css from '../components/images/css.png';
 import js from '../components/images/js.png';
 import react from '../components/images/react.png';
-
+import tailwindcss from '../components/images/tailwindcss.png';
+import mongodb from '../components/images/mongodb.png';
+import nodejs from '../components/images/nodejs.png';
 
 
 $(document).ready(function(){
@@ -81,7 +83,7 @@ function SkillsAndProjects() {
           </div>
         </div>
       </div>
-      <div className='project-card-super'>
+      <div className='project-card-super gap-5'>
         <div id='and-pro'>
         <div id='popUp-1' className='popUpText invisible'>
 
@@ -121,17 +123,17 @@ function SkillsAndProjects() {
 
         </div>
         <ProjectCard 
-          title = "Portfolio Website"
-          desc = "Personal Webpage"
-          link = "#Home"
+          title = "wwwE"
+          desc = "A Fullstack Event Management Application"
+          link = "https://github.com/pranav-salunkhe/wwwE"
           imgSrc = {externalLinkLogo}
           alt = "External Link Logo"
-          ts1 = {html}
-          wts1 = "html"
-          ts2 = {css}
-          wts2= "css"
-          ts3 = {js}
-          wts3 = "js"
+          ts1 = {tailwindcss}
+          wts1 = "tailwindcss"
+          ts2 = {mongodb}
+          wts2= "mongodb"
+          ts3 = {nodejs}
+          wts3 = "nodejs"
           ts4 = {react}
           wts4 = "react"
         />

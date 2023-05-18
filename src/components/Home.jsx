@@ -1,5 +1,5 @@
 import React from 'react';
-
+import index from '../index.css';
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
           <p>Hey</p>
         </div>
         <div className="home-div-p2">
-          <p>I'm Pranav Salunkhe</p>
+          <p className=''>I'm Pranav Salunkhe</p>
         </div>
         <div className="home-div-p3">
         <p>An undergrad at NITK trying to learn and create</p>

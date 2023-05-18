@@ -4,8 +4,7 @@ import Experience from './Experience';
 import Home from './Home';
 import Navbar from './Navbar';
 import SkillsAndProjects from './SkillsAndProjects';
-
-
+import index from '../index.css';
 
 function App() {
   return (

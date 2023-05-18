@@ -7,7 +7,7 @@ function ExpCard(props) {
   return (
     <div
       id="Card"
-      className="exp-main card col-lg-3 col-md-4 col-sm-2 exp-card-super bg-transparent border-0"
+      className="exp-main col-lg-3 col-md-4 col-sm-2 exp-card-super bg-transparent border-0"
     >
       <div id="Card-Body" className="card-body exp-card-main">
         <div className="exp-card-img">
